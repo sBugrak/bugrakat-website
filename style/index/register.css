@@ -1,0 +1,180 @@
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 60vw;
+    min-width: 303px;
+    border-radius: 8px;
+    margin: 2rem auto;
+    transition: all 0.3s ease;
+}
+
+.register-title {
+    width: 100%;
+    text-align: center;
+    color: var(--color-background);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    user-select: none;
+}
+
+.register-form {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-muted);
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    max-width: 800px;
+    min-width: 303px;
+    padding: 2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+
+.register-form input {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid var(--color-background), white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.register-label {
+    color: var(--color-secondary), grey;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.register-form:nth-child(2) {
+    margin-bottom: 0;
+}
+
+.register-label input {
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    font-weight: normal;
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--color-accent);
+    border-radius: 4px;
+}
+
+.register-label input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 2px 2px 5px var(--color-primary);
+    transition: all 0.3s ease;
+}
+
+.register-label input::placeholder {
+    color: var(--color-primary);
+}
+
+.h-captcha {
+    display: inline-flex;
+    width: fit-content;
+    height: auto;
+    margin-bottom: 1rem;
+    background-color: var(--color-muted);
+    transition: all 0.2s ease-in-out;
+}
+
+.h-captcha:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the password container */
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Adjust the password input to account for the toggle icon */
+.password-container input {
+    width: 100%;
+    padding-right: 2.5rem;
+    /* Add space for the icon */
+}
+
+/* Style the toggle icon */
+.toggle-password {
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #666;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.1s ease;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: var(--color-secondary);
+}
+
+.submit-button:disabled {
+    background-color: var(--color-secondary);
+    cursor: not-allowed;
+}
+
+.have-account {
+    margin-top: 2rem;
+    color: var(--color-secondary);
+    font-size: 1rem;
+}
+
+@media (max-width: 400px) {
+    .register-container {
+        max-width: 90vw;
+        width: 90vw;
+        min-width: 90vw;
+        padding: 0rem;
+    }
+
+    .register-title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .register-form {
+        max-width: 80vw;
+        width: 80vw;
+        min-width: 80vw;
+        padding: 1rem;
+    }
+
+    .h-captcha {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+}

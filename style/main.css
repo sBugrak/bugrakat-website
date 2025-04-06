@@ -1,0 +1,26 @@
+:root {
+    --color-primary: rgb(1, 22, 30);
+    --color-secondary: rgb(18, 69, 89);
+    --color-accent: rgb(89, 130, 145);
+    --color-muted: rgb(174, 195, 176);
+    --color-background: rgb(239, 246, 224);
+    --color-text: rgb(220, 230, 200);
+}
+
+
+body {
+    font-family: monospace;
+    background-color: var(--color-accent);
+    width: 100%;
+    height: 100%;
+}
+
+strong {
+    color: var(--color-background), white;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+}
+
+a {
+    text-decoration: none;
+}
