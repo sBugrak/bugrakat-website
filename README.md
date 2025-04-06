@@ -1,7 +1,7 @@
 
 # Bugrakat Habit Tracker Website
 
-This website is my 
+This website is specially made for my girlfriend Katareña The Great 🩷
 
 ## Features
 
